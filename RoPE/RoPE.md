@@ -23,7 +23,10 @@ $$f(k,n)=R_f(k,n)e^{i\Theta_f(k,n)}$$
 
 由此，
 
-$$<f(q,m),f(k,n)>=R_f(q,m)R_f(k,n)e^{i(\Theta_f(q,m)-\Theta_f(k,n))}\\=R_g(q,k,m-n)e^{i\Theta_g(q,k,m-n)}$$
+$$\begin{aligned}
+<f(q,m),f(k,n)>&=R_f(q,m)R_f(k,n)e^{i(\Theta_f(q,m)-\Theta_f(k,n))}\\
+&=R_g(q,k,m-n)e^{i\Theta_g(q,k,m-n)}
+\end{aligned}$$
 
 根据对照：
 
@@ -59,16 +62,22 @@ $$\begin{aligned}
 &=\Theta_g(q,k,1)+\Theta(k)-\Theta(q)
 \end{aligned}$$
 
-等式右侧是一个常数，说明$\phi(m)-\phi(m-1)$是一个等差数列，可以考虑$\phi(m)=m\theta$
+等式右侧是一个常数，说明
+$\phi(m)-\phi(m-1)$
+是一个等差数列，可以考虑
+$\phi(m)=m\theta$
 
 由此推导出二维形式：
+
 $$\begin{aligned}
 f(q,m)&=R_f(q,m)e^{i\Theta_f(q,m)}\\
 &=\Vert q\Vert e^{i(\Theta(q)+m\theta)}\\
 &=(\Vert q\Vert e^{i\Theta(q)})e^{im\theta}
 \end{aligned}$$
 
-其中，$\Vert q\Vert e^{i\Theta(q)}$为 $q$的极坐标形式。
+其中，
+$\Vert q\Vert e^{i\Theta(q)}$
+为 $q$的极坐标形式。
 
 ### 考虑高维度场景
 
