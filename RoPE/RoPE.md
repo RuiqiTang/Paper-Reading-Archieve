@@ -23,10 +23,12 @@ $$f(k,n)=R_f(k,n)e^{i\Theta_f(k,n)}$$
 
 由此，
 
-$$\begin{aligned}
-<f(q,m),f(k,n)>&=R_f(q,m)R_f(k,n)e^{i(\Theta_f(q,m)-\Theta_f(k,n))}\\
+$$
+\begin{aligned}
+f(q,m)\cdot f(k,n)&=R_f(q,m)R_f(k,n)e^{i(\Theta_f(q,m)-\Theta_f(k,n))}\\
 &=R_g(q,k,m-n)e^{i\Theta_g(q,k,m-n)}
-\end{aligned}$$
+\end{aligned}
+$$
 
 根据对照：
 
