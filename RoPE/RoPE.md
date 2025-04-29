@@ -47,12 +47,10 @@ $$f_{t:t\in \{q,k,v\}}(x_i,i):=W_{t:t\in \{q,k,v\}}(x_i+p_i)$$
 
 式中，
 
-$$
-\begin{cases}
-\boldsymbol{p}_{i,2t} &= \sin(k / 10000^{2t/d}) \\
-\boldsymbol{p}_{i,2t + 1} &= \cos(k / 10000^{2t/d})
-\end{cases}
-$$
+$$p_{i,2t} &= \sin(k / 10000^{2t/d})$$
+
+$$p_{i,2t + 1} &= \cos(k / 10000^{2t/d})$$
+
 
 - 同时，在相关研究中，$p_i$也可以是trainable params
 
