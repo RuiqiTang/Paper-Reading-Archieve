@@ -47,10 +47,12 @@ $$f_{t:t\in \{q,k,v\}}(x_i,i):=W_{t:t\in \{q,k,v\}}(x_i+p_i)$$
 
 式中，
 
-$$\begin{cases}
+$$
+\begin{cases}
 \boldsymbol{p}_{i,2t} &= \sin(k / 10000^{2t/d}) \\
 \boldsymbol{p}_{i,2t + 1} &= \cos(k / 10000^{2t/d})
-\end{cases}$$
+\end{cases}
+$$
 
 - 同时，在相关研究中，$p_i$也可以是trainable params
 
@@ -83,7 +85,9 @@ $$f_{t:t\in \{q,k,v\}}(x_i,i):=W_{t:t\in \{q,k,v\}}(x_i+p_i)$$
 
 #### Method 1: Dal et al.
 
-对于$q_m^T k_n$，可以被写作如下方式
+对于
+$q_m^T k_n$
+，可以被写作如下方式
 
 $$q_m^T k_n=x_m^T W_q^T W_k x_n+x_m^T W_q^T W_k p_n+p_m^T W_q^T W_k x_n+p_m^T W_q^T W_k p_n$$
 
@@ -97,7 +101,9 @@ $$q_m^T k_n=x_m^T W_q^T W_k x_n+x_m^T W_q^T \tilde W_k \tilde p_{m-n}+p_m^T W_q^
 
 $$q_m^T k_n=x_m^T W_q^T W_k x_n +b_{i,j}$$
 
-- 式中，$b_{i,j}$ 是一个可被训练的bias项
+- 式中，
+$b_{i,j}$
+是一个可被训练的bias项
 
 #### Method 3: Raffel et al.
 
