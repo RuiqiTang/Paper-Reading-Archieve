@@ -52,7 +52,9 @@ $$p_{i,2t} = \sin(k / 10000^{2t/d})$$
 $$p_{i,2t + 1} = \cos(k / 10000^{2t/d})$$
 
 
-- 同时，在相关研究中，$p_i$也可以是trainable params
+- 同时，在相关研究中，
+$p_i$
+也可以是trainable params
 
 ## Relative position embedding
 
@@ -208,7 +210,7 @@ $\Vert q\Vert e^{i\Theta(q)}$
 $R_{\Theta,m}^d$
 进行位置编码，参考以下进行
 
-![rotation-matrix-example](rotation-matrix.png)
+![rotation matrix](rotation-matrix.png)
 
 据此，可以通过旋转矩阵实现对于$q$和$k$的位置编码，即
 
