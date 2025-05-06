@@ -108,6 +108,8 @@ $$q_m^T k_n=x_m^T W_q^T W_k x_n+x_m^T W_q^T \tilde W_k \tilde p_{m-n}+p_m^T W_q^
 
 #### Method 2: Raffel et al., He et al. , Ke et al.,Huang et al.
 
+相关code: [Raffel_T5](code-implement/Raffel_T5_position_encoding.py)
+
 仅将相对位置信息编码到注意力权重中
 
 $$q_m^T k_n=x_m^T W_q^T W_k x_n +b_{i,j}$$
@@ -118,14 +120,18 @@ $b_{i,j}$
 
 #### Method 3: Raffel et al.
 
+相关code:[Raffel_project](code-implement/Raffel_projection.py)
+
 使用不同的投影矩阵来模拟一对单词或位置
 
 $$q_m^T k_n=x_m^TW_q^TW_k x_n+p_m^T U_q^T U_kp_n+b_{i,j}$$
 
-<!-- TODO: 查看原文， $U_k$是什么 -->
+<!--  Q:查看原文， $U_k$是什么 ? A:投影矩阵-->
 
 
 #### Method 4: He et al.（最高效的方式）
+
+相关code：[He_DeBERTa](code-implement/He_DeBERTa.py)
 
 只有使用中间两个项才能完全建模两个标记的相对位置，即使用如下方式进行计算
 
