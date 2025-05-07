@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import math
+import torch.nn.functional as F
 
 class RotaryEmbedding(nn.Module):
     def __init__(self, dim, base=10000):
@@ -69,6 +70,7 @@ class RoPEMultiHeadAttention(nn.Module):
 
         query_heads = self._split_heads(query, batch_size)
         key_heads = self._split_heads(key, batch_size)
+        value_heads=self._split_heads(value,batch_size)
 
         # Apply RoPE to query and key
         seq_len_q = query_heads.shape[-2]
