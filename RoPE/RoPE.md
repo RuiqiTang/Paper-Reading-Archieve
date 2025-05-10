@@ -227,7 +227,7 @@ $\Vert q\Vert e^{i\Theta(q)}$
 $R_{\Theta,m}^d$
 进行位置编码，参考以下进行
 
-![rotation matrix](pic/rotation-matrix.png)
+<img src="pic/rotation-matrix.png" alt="rotation matrix">
 
 据此，可以通过旋转矩阵实现对于$q$和$k$的位置编码，即
 
@@ -245,4 +245,6 @@ q_m^T k_n&=(R_{\Theta,m}^d W_{q,k} x_m)^T(R_{\Theta,m}^d W_{q,k} x_m)\\
 式中，定义 
 $R_{\Theta,n-m}^d=(R_{\Theta,m}^d)^T(R_{\Theta,m}^d)$
 
-![Illustartion](pic/Implementation-of-Rotary-Position-Embedding.png)
+<img scr="pic/RoPE.png" alt="Illustration">
+
+
