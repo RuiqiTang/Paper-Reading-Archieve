@@ -102,7 +102,7 @@ $q_m^T k_n$
 
 $$q_m^T k_n=x_m^T W_q^T W_k x_n+x_m^T W_q^T W_k p_n+p_m^T W_q^T W_k x_n+p_m^T W_q^T W_k p_n$$
 
-使用正弦编码 $\tilde p_{m-n}$ 来替换 $p_n$，即使用$W_k p_n$来替换$\tilde W_k \tilde p_{m-n}$
+使用相对编码 $\tilde p_{m-n}$ 来替换 $p_n$，即使用$W_k p_n$来替换$\tilde W_k \tilde p_{m-n}$
 
 $$q_m^T k_n=x_m^T W_q^T W_k x_n+x_m^T W_q^T \tilde W_k \tilde p_{m-n}+p_m^T W_q^T W_k x_n+p_m^T W_q^T \tilde W_k \tilde p_{m-n}$$
 
